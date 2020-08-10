@@ -58,7 +58,7 @@ class SubPubController extends Controller
             $message = !empty($data['message']) ? $data['message'] : null;
             // log the message
             Log::info("{$topic}: {$message}");
-            return response()->json("Message Received!");
+            return response()->json("Message received on {$topic}!");
         } catch (Exception $ex)
         {
             return response()->json($ex->getMessage(), 403);
