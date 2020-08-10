@@ -56,6 +56,13 @@
     - `/api/event` is a POST endpoint that receives broadcast messages from the publishing server about the `topic` subscribed for
         - Just logs the message and topic in a Laravel log file. In node.js, this would be a console.log() call
     - The first two routes are defined in the Publishing server, whereas the last one is defined in the clinets (listeners)  
-    
+ 
+## Testing
+- Ensure you are in the project directory
+- Start one test client/listener on port `8001` using the command below:
+    - `php artisan serve --port 8001`
+- Run `./vendor/bin/phpunit` to run the tests
+
+
 
 # Happy Coding
